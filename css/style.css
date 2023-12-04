@@ -14,47 +14,65 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&display=swap');
 
 *{
     margin: 0;
     color: var(--text-font-color);
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
 body{
     background-color: #F8F6F5;
 }
+.tamaño{
+    width: 70%;
+}
 
 /* NAVEGACION */
 .nav{
-    margin: 30px auto;
-    width: 70%;
-}
-.nav ul{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 70px;
-    justify-content: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-.nav ul li{
-    list-style: none;
-}
-.nav ul li a{
-    font-family: 'Eyesome';
-    text-decoration: none;
-    font-size: 1.1rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
-hr{
+.nav .nav-bar{
+    width: 70%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.nav-bar ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 30px 0;
+}
+.nav-bar ul li{
+    list-style: none;
+    text-align: center;
+    width: 140px;
+}
+.nav-bar ul li a{
+    font-family: 'Eyesome';
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #fffaf642;
+    border-radius: 25px;
+}
+.nav-bar ul li a:hover{
+    background-color: #fffaf6e4;
+}
+hr{
+    width: 100%;
 }
 
 /* SECCION PRINCIPAL */
 .sec-indice{
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -87,20 +105,57 @@ p{
 
 /* IMAGENES DE FONDO */
 .glicina-iz{
-    position: absolute;
-    top: 0;
+    position:fixed;
+    top: 569.8;
+    z-index: -1;
 }
 .glicina-iz img{
     width: 800px;
     opacity: 0.3;
 }
 .glicina-de{
-    position: absolute;
+    position:fixed;
     top: 0;
     right: 0;
+    z-index: -1;
 }
 .glicina-de img{
     width: 800px;
     opacity: 0.3;
     transform: scaleX(-1);
+}
+
+/* ACERCA DE */
+.acerca-de{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.acerca-de > div > div{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+.contenido-madyurit{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.descripcion-madyurit{
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    font-weight: 100;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    padding-left: 12px;
+}
+.foto-perfil{
+    padding: 5px;
+    margin: auto;
+}
+.foto-perfil img{
+    width: 320px;
 }
