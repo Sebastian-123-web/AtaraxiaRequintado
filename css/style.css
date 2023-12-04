@@ -160,3 +160,24 @@ p{
 .foto-perfil img{
     width: 320px;
 }
+
+/* PRESENTACION PROYECTO */
+.__presentacion_proyecto{
+    width: 100%;
+    height: 600px;
+    /* background-color: #f6e8e19e; */
+    background-color: aqua;
+}
+.columnas{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+}
+.__presentacion_proyecto_personas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.__presentacion_proyecto_personas img{
+    width: 200px;
+}
