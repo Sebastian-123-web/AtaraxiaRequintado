@@ -134,6 +134,9 @@ p{
     margin-bottom: 150px;
     padding-top: 100px;
 }
+.acerca-de_perfil_madyurit{
+    margin-bottom: 200px;
+}
 .acerca-de > div > div{
     display: flex;
     justify-content: space-around;
