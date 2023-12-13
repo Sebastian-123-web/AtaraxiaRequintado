@@ -29,6 +29,9 @@ body{
 .tamaño{
     width: 70%;
 }
+.font-Ataraxia{
+    font-family: 'Ataraxia Requintado';
+}
 
 /* NAVEGACION */
 .nav{
@@ -131,11 +134,9 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 150px;
     padding-top: 100px;
 }
 .acerca-de_perfil_madyurit{
-    margin-bottom: 200px;
 }
 .acerca-de > div > div{
     display: flex;
@@ -203,4 +204,12 @@ p{
 }
 .__presentacion_proyecto_sillas_curva img{
     width: 150px;
+}
+
+
+
+
+.imagenes-modificar{
+    width: 70%;
+    margin: auto;
 }
